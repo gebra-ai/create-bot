@@ -11,6 +11,7 @@ export default defineConfig({
   base: '/create-bot/',
   server: {
     port: parseInt(process.env.PORT || '8300'),
-    host: true
+    host: true,
+    allowedHosts: ['monitor.gebra.ai']
   }
 })
